@@ -61,7 +61,7 @@ export default function ContactForm() {
     }
 
     if (!formData.supportType) {
-      newErrors.supportType = "Please select how you'd like to support";
+      newErrors.supportType = "Please select how you&apos;d like to support";
     }
 
     setErrors(newErrors);
@@ -102,8 +102,8 @@ export default function ContactForm() {
               Thank You!
             </h2>
             <p className="text-xl text-gray-600 mb-6">
-              Your message has been received. We'll get back to you within 24
-              hours.
+              Your message has been received. We&apos;ll get back to you within
+              24 hours.
             </p>
             <Button
               onClick={() => {
@@ -139,9 +139,9 @@ export default function ContactForm() {
               Get in Touch
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Ready to make a difference? We'd love to hear from you. Whether
-              you want to volunteer, donate, or learn more about our work, we're
-              here to help.
+              Ready to make a difference? We&apos;d love to hear from you.
+              Whether you want to volunteer, donate, or learn more about our
+              work, we&apos;re here to help.
             </p>
 
             <div className="space-y-6">

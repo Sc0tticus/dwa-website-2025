@@ -51,7 +51,7 @@ function StatCard({ endValue, label, prefix = "", suffix = "" }) {
 
     // Cleanup function
     return () => clearInterval(timer);
-  }, []); // Empty dependency array means this runs once when component mounts
+  }, [endValue]); // Include endValue in dependency array
 
   return (
     <div className="text-center">
