@@ -1,40 +1,43 @@
-// Module 5: Tech Partners Component
-// Your final challenge: Create a logo grid for partner organizations
-
 import React from 'react'
 
 const partners = [
-  { name: "Google", logo: "🔍" },
-  { name: "Microsoft", logo: "🪟" },
-  { name: "Salesforce", logo: "☁️" },
-  { name: "Slack", logo: "💬" },
-  { name: "Canvas", logo: "🎨" },
-  { name: "GitHub", logo: "🐙" },
-  { name: "Box", logo: "📦" },
-  { name: "Linktree", logo: "🌳" },
-  { name: "Newsello", logo: "📰" },
-  { name: "ChatBot", logo: "🤖" }
+  "Google", "Microsoft", "Salesforce", "Slack", "Canva", "Github", "BOX", "Linktree", "NewRelic", "ChatBot"
 ]
 
 const TechPartners = () => {
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">
-          Tech Partners
-        </h2>
+    <section className="py-20 bg-gray-50">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Tech Partners
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Trusted by leading technology companies who support our mission
+          </p>
+        </div>
         
-        {/* Partner logos grid */}
-        <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-10 gap-4 items-center justify-items-center">
+        {/* Partner names in elegant grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {partners.map((partner, index) => (
             <div 
               key={index} 
-              className="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors"
+              className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center group"
             >
-              <div className="text-3xl mb-2">{partner.logo}</div>
-              <span className="text-xs text-gray-600 text-center">{partner.name}</span>
+              <span className="text-lg font-semibold text-gray-700 group-hover:text-blue-600 transition-colors text-center">
+                {partner}
+              </span>
             </div>
           ))}
+        </div>
+        
+        <div className="text-center mt-12">
+          <p className="text-gray-600">
+            Want to become a tech partner?{' '}
+            <a href="#contact" className="text-blue-600 hover:text-blue-700 font-medium underline">
+              Get in touch
+            </a>
+          </p>
         </div>
       </div>
     </section>

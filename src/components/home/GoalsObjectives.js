@@ -1,11 +1,3 @@
-// Create your Goals & Objectives component here!
-// Remember to:
-// 1. Import React
-// 2. Create the data arrays
-// 3. Build the two-column layout
-// 4. Map over the data
-// 5. Export the component
-
 import React from 'react'
 
 const goals = [
