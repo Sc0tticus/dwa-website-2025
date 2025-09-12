@@ -3,23 +3,18 @@ import { useState, useEffect } from "react";
 
 export default function ImpactStats() {
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-blue-100 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             Our impact in numbers
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <StatCard endValue={5000} label="Families Supported" suffix="+" />
-          <StatCard endValue={25} label="Communities Reached" suffix="+" />
-          <StatCard
-            endValue={100000}
-            label="Lives Impacted"
-            prefix="₹"
-            suffix="+"
-          />
+          <StatCard endValue={5000} label="People" suffix="+" />
+          <StatCard endValue={140} label="Villages" suffix="+" />
+          <StatCard endValue={30} label="Programs" suffix="+" />
         </div>
       </div>
     </section>

@@ -1,18 +1,18 @@
 import HeroSection from "../components/HeroSection";
+import GoalsObjectives from "../components/home/GoalsObjectives";
+import ProgramsGrid from "../components/home/ProgramsGrid";
 import ImpactStats from "../components/ImpactStats";
-import PartnerOrganizations from "../components/PartnerOrganizations";
-import Testimonials from "../components/Testimonials";
-import ProcessSteps from "../components/ProcessSteps";
+import TechPartners from "../components/home/TechPartners";
 import ContactForm from "../components/ContactForm";
 
 export default function Home() {
   return (
     <main>
       <HeroSection />
+      <GoalsObjectives />
+      <ProgramsGrid />
       <ImpactStats />
-      <PartnerOrganizations />
-      <Testimonials />
-      <ProcessSteps />
+      <TechPartners />
       <ContactForm />
     </main>
   );

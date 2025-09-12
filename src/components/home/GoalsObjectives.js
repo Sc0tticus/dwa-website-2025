@@ -21,7 +21,7 @@ const goals = [
 const objectives = [
   "Promote equality & justice ⚖️",
   "Quality education for children 📚",
-  "Women’s empowerment & livelihoods 👩‍👩‍👧",
+  "Women's empowerment & livelihoods 👩‍👩‍👧",
   "Better health & nutrition 🏥",
   "Sustainable livelihoods & skills 🛠️",
   "Community leadership 🤝",
@@ -39,7 +39,7 @@ const GoalsObjectives = () => {
             <ul className="space-y-3">
               {goals.map((goal, index) => (
                 <li key={index} className="text-white flex items-start">
-                  <span className="text-yellow-300 mr-3 mt-1">🎯</span>
+                  <span className="text-yellow-300 mr-3 mt-1"></span>
                   <span className="leading-relaxed">{goal}</span>
                 </li>
               ))}
@@ -52,7 +52,7 @@ const GoalsObjectives = () => {
             <ul className="space-y-3">
               {objectives.map((objective, index) => (
                 <li key={index} className="text-white flex items-start">
-                  <span className="text-yellow-300 mr-3 mt-1">⚡</span>
+                  <span className="text-yellow-300 mr-3 mt-1"></span>
                   <span className="leading-relaxed">{objective}</span>
                 </li>
               ))}
