@@ -68,18 +68,18 @@ export default function HeroSection() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search..."
-              className="w-full pl-10 pr-4 py-3 rounded-xl border-none focus:outline-none text-gray-800 bg-white"
+              className="w-full pl-10 pr-4 py-3 border-none focus:outline-none text-gray-800 bg-white"
             />
           </div>
 
           {/* Button */}
-          <button
+         <button
             type="submit"
-            className="mt-3 sm:mt-0 sm:ml-3 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition"
+            className="mt-3 sm:mt-0 sm:ml-3 px-6 py-3 bg-[#7F4592] text-white font-semibold hover:bg-[#693770] transition"
           >
             Search
           </button>
-        </form>
+      </form>
       </div>
     </header>
   );
