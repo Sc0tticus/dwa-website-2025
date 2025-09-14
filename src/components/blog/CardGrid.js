@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import blogPosts from "../../data/blogPosts";
-import Link from "next/link";
 import { useState } from "react";
 
 // Load Inter font
@@ -13,8 +12,9 @@ export default function CardGrid() {
   const [showAll, setShowAll] = useState(false);
 
   const Card = ({ slug, image, title, description, date }) => (
-    <div
-      className={`flex flex-col md:flex-row bg-white shadow-md overflow-hidden w-full ${inter.className}`}
+    <a
+      href={`/blog/${slug}`}
+      className={`flex flex-col md:flex-row bg-white shadow-md overflow-hidden w-full ${inter.className} hover:shadow-lg transition cursor-pointer`}
     >
       {/* Left image */}
       <div className="relative md:w-1/2 h-48 md:h-auto">
@@ -30,19 +30,15 @@ export default function CardGrid() {
 
         {/* Button and date */}
         <div className="flex items-center justify-center mt-4 text-gray-500 text-sm space-x-4">
-          <Link
-            href={`/blog/${slug}`}
-            className="px-4 py-2 bg-[#7F4592] text-white font-semibold hover:bg-[#693770] transition"
-          >
+          <div className="px-4 py-2 bg-[#7F4592] text-white font-semibold hover:bg-[#693770] transition">
             View Post
-          </Link>
+          </div>
           <span className="border-l border-gray-300 pl-4">{date}</span>
         </div>
       </div>
-    </div>
+    </a>
   );
 
-  // Decide which cards to show
   const cardsToShow = showAll ? blogPosts : blogPosts.slice(0, 4);
 
   return (
