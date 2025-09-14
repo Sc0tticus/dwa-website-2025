@@ -4,54 +4,69 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import blogPosts from "../../data/blogPosts";
 import Link from "next/link";
+import { useState } from "react";
 
 // Load Inter font
 const inter = Inter({ subsets: ["latin"] });
 
-
 export default function CardGrid() {
-const Card = ({ slug, image, title, description, date }) => (
-  <div className={`flex flex-col md:flex-row bg-white shadow-md overflow-hidden w-full ${inter.className}`}>
-    {/* Left image */}
-    <div className="relative md:w-1/2 h-48 md:h-auto">
-      <Image src={image} alt={title} fill className="object-cover" />
-    </div>
+  const [showAll, setShowAll] = useState(false);
 
-    {/* Right content */}
-    <div className="flex flex-col justify-between p-4 md:w-1/2">
-      <div>
-        <h2 className="font-bold text-xl mb-2">{title}</h2>
-        <p className="text-gray-700">{description}</p>
+  const Card = ({ slug, image, title, description, date }) => (
+    <div
+      className={`flex flex-col md:flex-row bg-white shadow-md overflow-hidden w-full ${inter.className}`}
+    >
+      {/* Left image */}
+      <div className="relative md:w-1/2 h-48 md:h-auto">
+        <Image src={image} alt={title} fill className="object-cover" />
       </div>
 
-      {/* Button and date */}
-      <div className="flex items-center justify-center mt-4 text-gray-500 text-sm space-x-4">
-        <Link href={`/blog/${slug}`} className="px-4 py-2 bg-[#7F4592] text-white font-semibold hover:bg-[#693770] transition">
-          View Post
-        </Link>
-        <span className="border-l border-gray-300 pl-4">{date}</span>
+      {/* Right content */}
+      <div className="flex flex-col justify-between p-4 md:w-1/2">
+        <div>
+          <h2 className="font-bold text-xl mb-2">{title}</h2>
+          <p className="text-gray-700">{description}</p>
+        </div>
+
+        {/* Button and date */}
+        <div className="flex items-center justify-center mt-4 text-gray-500 text-sm space-x-4">
+          <Link
+            href={`/blog/${slug}`}
+            className="px-4 py-2 bg-[#7F4592] text-white font-semibold hover:bg-[#693770] transition"
+          >
+            View Post
+          </Link>
+          <span className="border-l border-gray-300 pl-4">{date}</span>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+
+  // Decide which cards to show
+  const cardsToShow = showAll ? blogPosts : blogPosts.slice(0, 4);
 
   return (
     <>
-      {/* Card grid constrained by margins */}
+      {/* Card grid */}
       <div className={`w-full px-8 lg:px-32 mt-10 ${inter.className}`}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center">
-          {blogPosts.map((card, index) => (
+          {cardsToShow.map((card, index) => (
             <Card key={index} {...card} />
           ))}
         </div>
       </div>
 
-      {/* Full-width bottom button section */}
-      <div className="w-full bg-[#E8E7E7] py-12 flex justify-center mt-10">
-        <button className="px-6 py-3 bg-[#7F4592] text-white font-semibold hover:bg-[#693770] transition">
-          View More
-        </button>
-      </div>
+      {/* Full-width toggle button */}
+      {blogPosts.length > 4 && (
+        <div className="w-full bg-[#E8E7E7] py-12 flex justify-center mt-10">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="px-6 py-3 bg-[#7F4592] text-white font-semibold hover:bg-[#693770] transition"
+          >
+            {showAll ? "View Less" : "View More"}
+          </button>
+        </div>
+      )}
     </>
   );
 }
