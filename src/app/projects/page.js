@@ -2,9 +2,9 @@ import HeroSection from "../../components/projects/HeroSection";
 import PreviousProjects from "../../components/projects/PreviousProjects";
 import BenificiaryTestimonials from "../../components/projects/BenificiaryTestimonials";
 import OngoingProjects from "../../components/projects/OngoingProjects";
-import TechPartners from "../../components/projects/TechPartners";
-import GetMoreInfo from "../../components/projects/GetMoreInfo";
-import Accreditations from "../../components/projects/Accreditations";
+import OurPartners from "../../components/projects/OurPartners";
+import GetMoreInfo from "../../components/home/GetMoreInfo";
+import Accreditations from "../../components/home/Accreditations";
 
 export default function ProjectsPage() {
   return (
@@ -13,7 +13,7 @@ export default function ProjectsPage() {
       <PreviousProjects />
       <BenificiaryTestimonials />
       <OngoingProjects />
-      <TechPartners />
+      <OurPartners />
       <GetMoreInfo />
       <Accreditations />
     </main>

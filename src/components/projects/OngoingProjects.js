@@ -28,7 +28,7 @@ export default function ImpactStats() {
     <section className="pb-16" style={{ backgroundColor: "#ff9df085" }}>
 
       {/* Ongoing projects Statement */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 pt-10">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
           Ongoing Projects
         </h1>

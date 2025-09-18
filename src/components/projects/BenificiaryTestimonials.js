@@ -37,10 +37,10 @@ export default function ImpactStats() {
       </div>
 
       {/* middle Image */}
-      <div className="w-full h-[400px] relative mt-10">
+      <div className="w-full h-[500px] relative mt-10">
         <Image
-          src="/images/homepage/Homepage Children Image.jpg"
-          alt="Children from Dalit communities"
+          src="/images/projectspage/childern-in-class.png"
+          alt="childern in class"
           fill
           className="object-cover object-center grayscale"
           priority

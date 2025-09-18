@@ -6,8 +6,8 @@ export default function HeroSection() {
       {/* Hero Image */}
       <div className="w-full h-[500px] relative">
         <Image
-          src="/images/homepage/Homepage Children Image.jpg"
-          alt="Children from Dalit communities"
+          src="/images/projectspage/Projects-IMG1.png"
+          alt="project-hero-img"
           fill
           className="object-cover object-center grayscale"
           priority
