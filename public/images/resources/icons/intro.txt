@@ -1,1 +1,1 @@
-Image files for the resources page are uploaded here.
+Icons for the "resources web page" are stored here.
