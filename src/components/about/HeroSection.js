@@ -6,7 +6,7 @@ export default function HeroSection() {
       {/* Hero Image */}
       <div className="w-full h-[500px] relative">
         <Image
-          src="/images/aboutpage/kids.png"
+          src="/images/aboutpage/kids.jpg"
           alt="Children from Dalit communities"
           fill
           className="object-cover object-center grayscale"
@@ -22,7 +22,7 @@ export default function HeroSection() {
         </h1>
         
         <div className="prose prose-lg max-w-none">
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-lg font-medium text-black leading-relaxed">
           Dalit Welfare Association is a nonprofit organization dedicated to empowering marginalized communities
           in the rural villages of Nandyal and Kurnool districts. 
           Our work focuses on uplifting Dalit women through micro-credit, financial literacy, and sustainable livelihood opportunities.
