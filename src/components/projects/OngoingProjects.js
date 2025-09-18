@@ -1,7 +1,6 @@
-import React from 'react';
 import Image from "next/image";
 
-const testimonials = [
+const projects = [
   {
     name: "Digital Literacy",
     text: "Equipping rural Dalit children and youth with digital skills, e-learning tools, and computer training to bridge the digital divide, improve academic performance, and open new employment opportunities in the modern world.",
@@ -25,7 +24,7 @@ const testimonials = [
 
 export default function ImpactStats() {
   return (
-    <section className="pb-16" style={{ backgroundColor: "#ff9df085" }}>
+    <section className="pb-16 bg-[#ff9df085]">
 
       {/* Ongoing projects Statement */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 pt-10">
@@ -44,11 +43,11 @@ export default function ImpactStats() {
       {/* Ongoing project cards Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {testimonials.map((testimonial, index) => {
+          {projects.map((project, index) => {
             if (index % 2)
-              return <TestimonialCardRight key={index} testimonial={testimonial} />
+              return <ProjectCardRight key={index} project={project} />
 
-            return <TestimonialCardLeft key={index} testimonial={testimonial} />
+            return <ProjectCardLeft key={index} project={project} />
           })}
         </div>
       </div>
@@ -59,13 +58,13 @@ export default function ImpactStats() {
 
 
 
-function TestimonialCardLeft({ testimonial }) {
+function ProjectCardLeft({ project }) {
   return (
-    <div className="bg-white shadow-lg overflow-hidden flex flex-col sm:flex-row ">
+    <div className="bg-white overflow-hidden flex flex-col sm:flex-row hover:shadow-lg transition">
       {/* Splatter Image */}
-      <div className="relative w-full sm:w-48 h-full flex-shrink-0">
+      <div className="relative w-full sm:w-55 h-full flex-shrink-0">
         <Image
-          src={testimonial.splatterImage}
+          src={project.splatterImage}
           alt="Decorative splatter"
           fill
           className="object-cover"
@@ -76,16 +75,16 @@ function TestimonialCardLeft({ testimonial }) {
       <div className="p-6 flex flex-col justify-between">
         <div>
           <h3 className="text-lg font-bold text-gray-900 mb-1">
-            {testimonial.name}
+            {project.name}
           </h3>
           <p className="text-sm text-gray-600 mb-4">
-            {testimonial.title}
+            {project.title}
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
-            {testimonial.text}
+            {project.text}
           </p>
         </div>
-        <button className="bg-purple-900 px-6 py-1 text-white mt-4 sm:mt-6 self-start" style={{ backgroundColor: "#622676" }}>
+        <button className="px-6 py-1 text-white mt-4 sm:mt-6 self-start bg-[#622676] font-semibold hover:bg-[#7F4592] transition  cursor-pointer">
           Read More
         </button>
       </div>
@@ -93,31 +92,31 @@ function TestimonialCardLeft({ testimonial }) {
   );
 }
 
-function TestimonialCardRight({ testimonial }) {
+function ProjectCardRight({ project }) {
   return (
-    <div className="bg-white shadow-lg overflow-hidden flex flex-col sm:flex-row ">
+    <div className="bg-white overflow-hidden flex flex-col sm:flex-row hover:shadow-lg transition">
       {/* Card content */}
       <div className="p-6 flex flex-col justify-between">
         <div>
           <h3 className="text-lg font-bold text-gray-900 mb-1">
-            {testimonial.name}
+            {project.name}
           </h3>
           <p className="text-sm text-gray-600 mb-4">
-            {testimonial.title}
+            {project.title}
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
-            {testimonial.text}
+            {project.text}
           </p>
         </div>
-        <button className="bg-purple-900 px-6 py-1 text-white mt-4 sm:mt-6 self-start" style={{ backgroundColor: "#622676" }}>
+        <button className="px-6 py-1 text-white mt-4 sm:mt-6 self-start bg-[#622676] font-semibold hover:bg-[#7F4592] transition  cursor-pointer">
           Read More
         </button>
       </div>
 
       {/* Splatter Image */}
-      <div className="relative w-full sm:w-48 h-full flex-shrink-0">
+      <div className="relative w-full sm:w-55 h-full flex-shrink-0">
         <Image
-          src={testimonial.splatterImage}
+          src={project.splatterImage}
           alt="Decorative splatter"
           fill
           className="object-cover"

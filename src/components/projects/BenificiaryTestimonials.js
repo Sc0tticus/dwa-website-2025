@@ -1,5 +1,3 @@
-"use client";
-import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const testimonials = [
@@ -48,43 +46,6 @@ export default function ImpactStats() {
         />
       </div>
     </section>
-  );
-}
-
-// Individual stat card component with animation
-function StatCard({ endValue, label, prefix = "", suffix = "" }) {
-  const [currentValue, setCurrentValue] = useState(0);
-
-  useEffect(() => {
-    const duration = 2000;
-    const steps = 60;
-    const increment = endValue / steps;
-    const stepDuration = duration / steps;
-
-    let currentStep = 0;
-
-    const timer = setInterval(() => {
-      currentStep++;
-      const newValue = Math.min(Math.round(increment * currentStep), endValue);
-      setCurrentValue(newValue);
-
-      if (currentStep >= steps) {
-        clearInterval(timer);
-      }
-    }, stepDuration);
-
-    return () => clearInterval(timer);
-  }, [endValue]);
-
-  return (
-    <div className="text-center py-8">
-      <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">
-        {prefix}
-        {currentValue.toLocaleString()}
-        {suffix}
-      </div>
-      <div className="text-lg text-gray-600">{label}</div>
-    </div>
   );
 }
 

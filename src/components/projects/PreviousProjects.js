@@ -6,7 +6,7 @@ const PreviousProjects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
           {/* Previous Projects Column - Teal Background */}
-          <div className=" p-8 lg:p-12" style={{ backgroundColor: "#622676" }}>
+          <div className=" p-8 lg:p-12 bg-[#622676]">
             <h3 className="text-2xl font-bold text-white mb-6">Dairy Project - Govindapalle</h3>
             <ul className="space-y-2">
               <li className="text-white flex items-start">
@@ -44,7 +44,7 @@ const PreviousProjects = () => {
           </div>
           
           {/* Objectives Column - Blue Background */}
-          <div className="p-8 lg:p-12" style={{ backgroundColor: "#ff9df085" }}>
+          <div className="p-8 lg:p-12 bg-[#ff9df085]">
             <h3 className="text-2xl font-bold text-black mb-6">Finance Awareness - Sirivella</h3>
             <ul className="space-y-3">
               <li className="text-white flex items-start">
