@@ -25,7 +25,7 @@ const testimonials = [
 
 export default function ImpactStats() {
   return (
-    <section className="bg-white pt-16">
+    <section className="bg-white mt-8">
 
       {/* Testimonials Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -37,7 +37,7 @@ export default function ImpactStats() {
       </div>
 
       {/* middle Image */}
-      <div className="w-full h-[500px] relative mt-10">
+      <div className="w-full h-[500px] relative mt-8">
         <Image
           src="/images/projectspage/childern-in-class.png"
           alt="childern in class"

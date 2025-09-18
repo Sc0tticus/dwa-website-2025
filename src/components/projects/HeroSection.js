@@ -16,8 +16,8 @@ export default function HeroSection() {
       </div>
 
       {/* Title and Mission Statement */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-8">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
           Previous Projects
         </h1>
         
