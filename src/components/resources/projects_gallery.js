@@ -13,38 +13,38 @@ return (
         <div className={styles.img_gallery}>
             <h4>Title 1</h4>
             <Image 
-              src={pic1.jpg}  
+              src={pic1}  
               alt="Project Image"
             />
             <Image 
-              src={pic2.jpg}  
+              src={pic2}  
               alt="Project Image"
             />
             <Image 
-              src={pic3.jpg}  
+              src={pic3}  
               alt="Project Image"
             />
             <Image 
-              src={pic5.jpg}  
+              src={pic5}  
               alt="Project Image"
             />
         </div>
         <div className={styles.img_gallery}>
             <h4>Title 2</h4>
             <Image 
-              src={pic1.jpg}  
+              src={pic1}  
               alt="Project Image"
             />
             <Image 
-              src={pic2.jpg}  
+              src={pic2}  
               alt="Project Image"
             />
             <Image 
-              src={pic3.jpg}  
+              src={pic3}  
               alt="Project Image"
             />
             <Image 
-              src={pic5.jpg}  
+              src={pic5}  
               alt="Project Image"
             />
         </div>
