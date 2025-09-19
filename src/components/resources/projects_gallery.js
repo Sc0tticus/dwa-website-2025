@@ -6,7 +6,7 @@ import pic3 from "/public/images/resources/image/pic3.jpg";
 import pic5 from "/public/images/resources/image/pic5.jpg";
 import styles from "/src/app/resources/styles/resourcesPage.module.css";
 
-export default function featured_stories_component() {
+export default function project_gallery_component() {
 return (
       <div className={styles.projects_gallery}>
         <h2>Projects Gallery</h2>
