@@ -21,7 +21,7 @@ return (
          </div>
          <nav id="nav">
            <Link href="#">
-             <a className={close_dropdown_menu}>
+             <a className={styles.close_dropdown_menu}>
                <Image 
                  src={close_icon} 
                  alt="close dropdown menu"
