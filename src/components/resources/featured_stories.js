@@ -12,7 +12,7 @@ return (
             <div className={styles.card}> 
                 <div className={styles.picture_holder}>
                     <Image 
-                      src={pic4.jpg} 
+                      src={pic4} 
                       alt="Dalit welfare beneficiaries"
                     />                     
                 </div>   
@@ -25,7 +25,7 @@ return (
           <div className={styles.card}> 
                 <div className={styles.picture_holder}>
                     <Image 
-                      src={pic4.jpg} 
+                      src={pic4} 
                       alt="Dalit welfare beneficiaries"
                     />                   
                 </div>   
@@ -38,7 +38,7 @@ return (
           <div className={styles.card}> 
                 <div className={styles.picture_holder}>
                     <Image 
-                      src={pic4.jpg} 
+                      src={pic4} 
                       alt="Dalit welfare beneficiaries"
                     />                
                 </div>   
@@ -52,6 +52,8 @@ return (
     </div>
 );
 }
+
+
 
 
 
