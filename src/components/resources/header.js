@@ -20,14 +20,12 @@ return (
            </span>
          </div>
          <nav id="nav">
-           <Link href="#">
-             <a className={styles.close_dropdown_menu}>
-               <Image 
-                 src={close_icon} 
-                 alt="close dropdown menu"
-                />   
-             </a>   
-           </Link>
+           <a href="#" className={close_dropdown_menu}>
+             <Image 
+               src={close_icon} 
+               alt="close dropdown menu"
+              />   
+           </a>   
            <Link href="/src/app/about/page.js"> 
              <a className={styles.nav_link_top}>About Us</a>  
            </Link>
@@ -46,16 +44,14 @@ return (
            <Link href="src/app/donate/page.js" 
              <a className={styles.button_link}>Donate Now</a>
            </Link>    
-         </nav>
-         <Link href="#nav"> 
-           <a>
-             <Image
-               src={menu_icon} 
+         </nav> 
+         <a href="#nav">
+           <Image
+             src={menu_icon} 
                className={styles.show_dropdown_menu} 
-               alt="show dropdown menu"
-             />
-          </a>       
-        </Link> 
+             alt="show dropdown menu"
+           />
+        </a>      
       </header>
       <Image
         src={main_picture} 
