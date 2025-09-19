@@ -84,9 +84,9 @@ function ProjectCardLeft({ project }) {
             {project.text}
           </p>
         </div>
-        <button className="px-6 py-1 text-white mt-4 sm:mt-6 self-start bg-[#622676] font-semibold hover:bg-[#7F4592] transition  cursor-pointer">
+        <a href="#projects/projectid" className="px-6 py-1 text-white mt-4 sm:mt-6 self-start bg-[#622676] font-semibold hover:bg-[#7F4592] transition  cursor-pointer">
           Read More
-        </button>
+        </a>
       </div>
     </div>
   );
