@@ -38,7 +38,7 @@ return (
            <Link href="src/app/support/page.js"> 
              <a className={styles.nav_link}>Support</a>
            </Link>
-           <Link href="src/app/blog/page.js"> 
+           <Link href="src/content/blog/page.js"> 
              <a className={styles.nav_link}>Blog </a>
            </Link>
            <Link href="src/app/donate/page.js" 
