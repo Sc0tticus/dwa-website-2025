@@ -35,37 +35,45 @@ return (
         </div>
         <div className={styles.accreditation}>
             <h3>Accreditations</h3>
-            <span>
+            <span>                
+             <a href="https://give.do/discover/18G1/dalit-welfare-association/">
                 <Image          
                   src={logo1} 
                   alt="give.do logo"
                 />
+             </a>
+             <a href="https://guidestarindia.org/GSN-9683/DWA">
                <Image          
                  src={logo2} 
                  alt="guidestarINDIA logo"
-                />
-               </span><br>
-              <span>
+                /> 
+             </a>
+           </span><br>
+           <span>
+             <a href="https://causes.benevity.org/causes/356-5640831431326_7b83">
                 <Image          
                  src={logo3} 
                  alt="benevity logo"
                 />
+             </a>
+             <a href="https://causes.goodstack.io/claim">
                <Image          
                  src={logo4} 
                  alt="goodstack logo"
                 />
-               </span>                      
+             </a>
+           </span>                      
           </div>                      
         </div>
         <div className={styles.social_media}>
             <p>                
-             <a href="https://www.linkedin.com/">
+             <a href="https://www.linkedin.com/company/dwaindia/">
                 <Image          
                  src={linkedin} 
                  alt="linkedin logo"
                 /> 
              </a>
-             <a href="https://www.instagram.com/?hl=en">
+             <a href="https://www.instagram.com/dwaindia/">
                <Image          
                  src={instagram} 
                  alt="instagram logo"
@@ -77,7 +85,7 @@ return (
                  alt="email icon"
                />  
              </a>
-               </p>
+           </p>
         </div>
         <div className={styles.policies}>
            <a href=""> 
