@@ -33,7 +33,9 @@ return (
       </div>       
     </div>
     <div className={styles.donate_now}>
+      <Link href="src/app/donate/page.js">
         <button>Donate Now</button>
+      </Link>  
         <span> Ready to get involved?</span>        
     </div>
   </div>
