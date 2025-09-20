@@ -1,9 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function HeroSection() {
   const title = "Blog";
@@ -18,7 +16,7 @@ export default function HeroSection() {
 
   return (
     <header
-      className={`relative w-full h-[500px] flex flex-col justify-center items-center text-center bg-cover bg-center ${inter.className}`}
+      className={`relative w-full h-[500px] flex flex-col justify-center items-center text-center bg-cover bg-center`}
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Gradient Overlay */}

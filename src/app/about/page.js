@@ -4,6 +4,8 @@ import Accreditations from "../../components/home/Accreditations";
 import AboutAccreditations from "../../components/about/AboutAccreditations";
 import ImpactStats from "../../components/about/ImpactStats";
 import GetMoreInfo from "../../components/home/GetMoreInfo";
+import AboutTeam from "../../components/about/AboutTeam"; 
+import Volunteers from "../../components/about/Volunteers";
 
 export default function AboutPage() {
   return (
@@ -12,10 +14,10 @@ export default function AboutPage() {
           <VisionMission />
           <AboutAccreditations />
           <ImpactStats
-            bgColor="bg-gray-50"
             numbersBg="bg-[#FFD446]"
           />
-
+          <AboutTeam />
+          <Volunteers />
           <GetMoreInfo />
           <Accreditations />
       </main>

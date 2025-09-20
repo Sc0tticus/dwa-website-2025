@@ -9,12 +9,12 @@ export default function ImpactStats({
   labelTextColor = "text-black"   // default black
 }) {
   return (
-    <section className={`${bgColor} py-16`}>
+    <section className={`${bgColor}`}>
       {/* Numbers Section */}
-      <div className={`${numbersBg} py-16 mb-16`}>
+      <div className={`${numbersBg} py-12`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-left mb-12">
-            <h2 className={`text-2xl md:text-3xl font-bold ${labelTextColor} mb-4`}>
+            <h2 className={`text-2xl md:text-3xl font-semibold ${labelTextColor} mb-4`}>
               Our impact in numbers
             </h2>
           </div>
@@ -62,7 +62,7 @@ function StatCard({ endValue, label, prefix = "", suffix = "", numberTextColor =
         {currentValue.toLocaleString()}
         {suffix}
       </div>
-      <div className={`text-xl font-bold ${labelTextColor}`}>{label}</div> {/* slightly bigger */}
+      <div className={`text-3xl font-semibold ${labelTextColor}`}>{label}</div> {/* slightly bigger */}
     </div>
   );
 }
