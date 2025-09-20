@@ -58,25 +58,35 @@ return (
           </div>                      
         </div>
         <div className={styles.social_media}>
-            <p>
+            <p>                
+             <a href="https://www.linkedin.com/">
                 <Image          
                  src={linkedin} 
                  alt="linkedin logo"
                 /> 
+             </a>
+             <a href="https://www.instagram.com/?hl=en">
                <Image          
                  src={instagram} 
                  alt="instagram logo"
                 /> 
+             </a>
+             <a href="mailto:info@dwaindia.org">
                <Image          
                  src={mail} 
                  alt="email icon"
-                />  
+               />  
+             </a>
                </p>
         </div>
         <div className={styles.policies}>
-            <span>Refund Policy</span>
-            <span>Privacy Policy</span>
-            <span>©DWAINDIA 2025</span>
+           <a href=""> 
+               <Link href="/src/app/refundPolicy/page.js">Refund Policy</Link>
+           </a>
+           <a href="">
+            <Link href="/src/app/privacyPolicy/page.js">Privacy Policy</Link>
+           </a>
+           <span>©DWAINDIA 2025</span>
         </div>
       </div>                   
     </footer>
