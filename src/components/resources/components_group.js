@@ -10,7 +10,7 @@ import footer from 'footer.js';
 
 export default function body_component() {
 return (
-   <body>
+   <div>   
        <header />
        <dwa_intro />
        <featured_stories />
@@ -19,6 +19,6 @@ return (
        <annual_reports />
        <GetMoreInfo_donate />
        <footer />
-   </body>
+   </div>
 );
 }
