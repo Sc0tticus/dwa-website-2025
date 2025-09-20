@@ -1,12 +1,12 @@
-import body from "/src/components/resources/body.js"
-import metadata from "/src/components/resources/metadata.js"
+import components_group from "src/components/resources/components_group.js"
+import metadata from "src/components/resources/metadata.js"
 
 
 export default function resourcesPg() {
 return (
-  <html lang="en"> 
+  <main> 
     <metadata />
-    <body />
-  </html>
+    <components_group />
+  </main>
 );
 }
