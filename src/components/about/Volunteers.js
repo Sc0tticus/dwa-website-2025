@@ -8,7 +8,7 @@ const volunteers = [
     description: "Volunteering as a website developer at DWA was truly rewarding. I felt proud to support their mission of empowering Dalit communities through education, women's entrepreneurship, and sustainable livelihoods.",
     src: "/images/homepage/SplatterImages/orange splatter.png",
     linkedin: "#",
-    bgColor: "bg-pink-100",
+    bgColor: "bg-[#FED6F8]",
   },
   {
     name: "Prince Sithole",
@@ -16,7 +16,7 @@ const volunteers = [
     description: "Volunteering as a website developer at DWA was truly rewarding. I felt proud to support their mission of empowering Dalit communities through education, women's entrepreneurship, and sustainable livelihoods.",
     src: "/images/homepage/SplatterImages/orange splatter 2.png",
     linkedin: "#",
-    bgColor: "bg-yellow-100",
+    bgColor: "bg-[#FFEEB5]",
   },
   {
     name: "Michael M",
@@ -24,7 +24,7 @@ const volunteers = [
     description: "Volunteering as a website developer at DWA was truly rewarding. I felt proud to support their mission of empowering Dalit communities through education, women's entrepreneurship, and sustainable livelihoods.",
     src: "/images/homepage/SplatterImages/orange splatter 2.png",
     linkedin: "#",
-    bgColor: "bg-yellow-100",
+    bgColor: "bg-[#FFEEB5]",
   },
   {
     name: "Fatimoh B",
@@ -32,7 +32,7 @@ const volunteers = [
     description: "Volunteering as a website developer at DWA was truly rewarding. I felt proud to support their mission of empowering Dalit communities through education, women's entrepreneurship, and sustainable livelihoods.",
     src: "/images/homepage/SplatterImages/orange splatter 2.png",
     linkedin: "#",
-    bgColor: "bg-yellow-100",
+    bgColor: "bg-[#FFEEB5]",
   },
   {
     name: "Dayo Abdul",
@@ -40,7 +40,7 @@ const volunteers = [
     description: "Volunteering as a website developer at DWA was truly rewarding. I felt proud to support their mission of empowering Dalit communities through education, women's entrepreneurship, and sustainable livelihoods.",
     src: "/images/homepage/SplatterImages/orange splatter.png",
     linkedin: "#",
-    bgColor: "bg-pink-100",
+    bgColor: "bg-[#FED6F8]",
   },
   {
     name: "Megan Ward",
@@ -48,10 +48,9 @@ const volunteers = [
     description: "Volunteering as a website developer at DWA was truly rewarding. I felt proud to support their mission of empowering Dalit communities through education, women's entrepreneurship, and sustainable livelihoods.",
     src: "/images/homepage/SplatterImages/orange splatter.png",
     linkedin: "#",
-    bgColor: "bg-pink-100",
+    bgColor: "bg-[#FED6F8]",
   },
 ];
-
 const Volunteers = () => {
   return (
     <section className="py-12 bg-white px-4 sm:px-6 lg:px-8">
@@ -61,39 +60,38 @@ const Volunteers = () => {
       </h2>
 
       {/* Volunteers Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-6xl mx-auto">
+     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {volunteers.map((volunteer, index) => (
-    <div
-  key={index}
-  className={`p-6 ${volunteer.bgColor} flex flex-col sm:flex-row items-start rounded-md inline-flex`}
->
-  {/* Image */}
-  <div className="flex-shrink-0 mb-4 sm:mb-0 sm:mr-6 w-full sm:w-48">
-    <Image
-      src={volunteer.src}
-      alt={volunteer.name}
-      width={200}
-      height={200}
-      className="object-cover rounded-md w-full h-full"
-    />
-  </div>
+          <div
+            key={index}
+            className={`p-2 ${volunteer.bgColor} flex flex-col sm:flex-row items-start max-w-xl w-full`}
+          >
+            {/* Image */}
+           <div className="flex-shrink-0 mb-4 sm:mb-0 sm:mr-6 w-full sm:w-60 max-w-xs h-40 sm:h-auto">
+            <Image
+              src={volunteer.src}
+              alt={volunteer.name}
+              width={350}
+              height={350}
+              className="object-cover w-full h-full"
+            />
+          </div>
 
-  {/* Text */}
-  <div className="flex flex-col sm:w-48">
-    <a
-      href={volunteer.linkedin}
-      className="text-blue-500 font-bold text-lg mb-2 self-end"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      LinkedIn
-    </a>
-    <h3 className="text-2xl font-bold text-black">{volunteer.name}</h3>
-    <p className="text-xl font-medium text-gray-700 mb-2">{volunteer.role}</p>
-    <p className="text-base text-black">{volunteer.description}</p>
-  </div>
-</div>
-
+            {/* Text */}
+            <div className="flex flex-col flex-1">
+              <a
+                href={volunteer.linkedin}
+                className="text-[#3EBFF9] font-black text-lg mb-2 self-end"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+              <h3 className="text-2xl font-bold text-black">{volunteer.name}</h3>
+              <p className="text-xl font-medium text-gray-700 mb-2">{volunteer.role}</p>
+              <p className="text-base text-black">{volunteer.description}</p>
+            </div>
+          </div>
         ))}
       </div>
     </section>
