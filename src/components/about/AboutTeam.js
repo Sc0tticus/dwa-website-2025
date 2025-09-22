@@ -12,7 +12,7 @@ const teamMembers = [
 
 const AboutTeam = () => {
   return (
-    <section className="py-12 bg-white px-4 sm:px-6 lg:px-8">
+    <section className="pt-12 bg-white px-4 sm:px-6 lg:px-8">
       {/* Heading */}
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-black text-left max-w-4xl mx-auto">
         DWA Team
@@ -42,7 +42,7 @@ const AboutTeam = () => {
         ))}
       </div>
 
-        <div className="mt-12 h-[2px] bg-black w-full"></div>
+        <div className="mt-18 h-[2px] bg-black w-full"></div>
     </section>
   );
 };

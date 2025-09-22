@@ -44,7 +44,7 @@ const volunteers = [
   },
   {
     name: "Megan Ward",
-    role: "Salesforce Admin Ireland.",
+    role: "Salesforce Admin., Ireland.",
     description: "Volunteering as a website developer at DWA was truly rewarding. I felt proud to support their mission of empowering Dalit communities through education, women's entrepreneurship, and sustainable livelihoods.",
     src: "/images/homepage/SplatterImages/orange splatter.png",
     linkedin: "#",
