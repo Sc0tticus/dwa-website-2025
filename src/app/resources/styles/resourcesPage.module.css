@@ -180,6 +180,7 @@ input{
 .arrow_icon{
     display: block;
     margin-top: 1em;
+    padding-left:0.3em;
 }
 button{
     border: 0;
@@ -236,8 +237,10 @@ footer,
     width:45%;   
 } 
 .address p,
+.policies a,
 .policies span{
     font-size:9px;
+    color:#ffffff;
 }
 .accreditation h3{
     text-align: left;
@@ -270,6 +273,12 @@ footer,
 .dwa img{
     height:85px;
     width:85px;
+}
+.large_screen{
+   color:#004265;
+}
+.mobile{
+  display:none;
 }
 .social_media img{
    height: 38px;
@@ -465,8 +474,22 @@ p.popup{
     }
     a.annual_reports_last_link{
         margin-right:auto;
-    }    
-    form{
+    }   
+    .dwa{
+    width:90%;        
+    }
+    .dwa img{
+    display: block;
+    margin: auto;
+}
+    .mobile{
+       display: inline;
+       color:#004265;
+    }
+    .large_screen{
+        display:none;
+    }   
+      form{
     padding: 0;
     width: 100%;
     justify-content:space-around;
@@ -481,12 +504,6 @@ p.popup{
         margin:2em auto auto auto;
         padding: 0.8em 0;
     }
-   /*  .donate_now{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    } */
     .donate_now span{
     display: block;
     text-align: center; 
@@ -539,4 +556,3 @@ p.popup{
     margin:auto;
     }    
 }
-
