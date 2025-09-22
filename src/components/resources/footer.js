@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import dwa_logo from "/public/images/resources/image/dwa_logo.jpg";
-import logo1 from "/public/images/resources/image/logo1.jpg";
-import logo2 from "/public/images/resources/image/logo2.jpg";
-import logo3 from "/public/images/resources/image/logo3.jpg";
-import logo4 from "/public/images/resources/image/logo4.jpg";
+import give.do_logo from "/public/images/resources/image/logo1.jpg";
+import guidestarindia_logo from "/public/images/resources/image/logo2.jpg";
+import benevity_logo from "/public/images/resources/image/logo3.jpg";
+import goodstack_logo from "/public/images/resources/image/logo4.jpg";
 import linkedin from "/public/images/resources/image/linkedin.jpg";
 import instagram from "/public/images/resources/image/instagram.jpg";
 import mail from "/public/images/resources/image/mail.jpg";
@@ -20,8 +20,8 @@ return (
                   src={dwa_logo} 
                   alt="Dalit Welfare Logo"
                 /><br>
-                DALIT<br>
-                <span style={{color:#004265}}>WELFARE</span>
+                DALIT <span className={mobile}>WELFARE</span><br>                
+            <span className={large_screen}>WELFARE</span>
             </p>
         </div>
         <div className={styles.footer_outer_div}>
@@ -38,13 +38,13 @@ return (
             <span>                
              <a href="https://give.do/discover/18G1/dalit-welfare-association/">
                 <Image          
-                  src={logo1} 
+                  src={give.do_logo} 
                   alt="give.do logo"
                 />
              </a>
              <a href="https://guidestarindia.org/GSN-9683/DWA">
                <Image          
-                 src={logo2} 
+                 src={guidestarindia_logo} 
                  alt="guidestarINDIA logo"
                 /> 
              </a>
@@ -52,13 +52,13 @@ return (
            <span>
              <a href="https://causes.benevity.org/causes/356-5640831431326_7b83">
                 <Image          
-                 src={logo3} 
+                 src={benevity_logo} 
                  alt="benevity logo"
                 />
              </a>
              <a href="https://causes.goodstack.io/claim">
                <Image          
-                 src={logo4} 
+                 src={goodstack_logo} 
                  alt="goodstack logo"
                 />
              </a>
