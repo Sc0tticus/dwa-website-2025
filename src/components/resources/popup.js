@@ -8,11 +8,13 @@ export default function popup_component() {
 return (
     <div className={popup_page}>
          <div className={get_more_info}>
-           <Image  
+             <Link href="src/app/resources/page.js">
+              <Image  
              className={close_popup}        
              src={close_icon} 
              alt="close popup"
            />  
+         </Link>
         <h2 className={popup}>Want more resources like this?</h2>
         <div className={get_more_info_array}>
             
