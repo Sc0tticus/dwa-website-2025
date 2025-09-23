@@ -1,26 +1,5 @@
 import Image from "next/image";
-
-const projects = [
-  {
-    name: "Digital Literacy",
-    text: "Equipping rural Dalit children and youth with digital skills, e-learning tools, and computer training to bridge the digital divide, improve academic performance, and open new employment opportunities in the modern world.",
-    splatterImage: "/images/homepage/SplatterImages/green splatter.png"
-  },
-  {
-    name: "Skill Development",
-    text: "Enhancing employability of college students through training in technical and digital skills, career counseling, and workshops, preparing them for competitive job markets and future entrepreneurship opportunities.",
-    splatterImage: "/images/homepage/SplatterImages/green splatter.png"
-  }, {
-    name: "Women Empowerment",
-    text: "Supporting women with micro-credit, training, and financial resources to start small enterprises, generate income, and strengthen household security, while promoting gender equality and leadership in their communities.",
-    splatterImage: "/images/homepage/SplatterImages/green splatter.png"
-  },
-  {
-    name: "Health Awareness",
-    text: "Promoting menstrual hygiene education and access to safe products among adolescent girls and women, breaking taboos, and improving health, dignity, and school attendance across rural villages in Nandyal and Kurnool districts.",
-    splatterImage: "/images/homepage/SplatterImages/green splatter.png"
-  }
-];
+import projectPosts from "../../data/projectPosts";
 
 export default function ImpactStats() {
   return (
@@ -43,11 +22,11 @@ export default function ImpactStats() {
       {/* Ongoing project cards Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projects.map((project, index) => {
+          {projectPosts.map((project, index) => {
             if (index % 2)
-              return <ProjectCardRight key={index} project={project} />
+              return <ProjectCardRight key={index} {...project} />
 
-            return <ProjectCardLeft key={index} project={project} />
+            return <ProjectCardLeft key={index} {...project} />
           })}
         </div>
       </div>
@@ -55,16 +34,13 @@ export default function ImpactStats() {
   );
 }
 
-
-
-
-function ProjectCardLeft({ project }) {
+function ProjectCardLeft({ project, slug, splatterImage, title, description }) {
   return (
     <div className="bg-white overflow-hidden flex flex-col sm:flex-row hover:shadow-lg transition">
       {/* Splatter Image */}
       <div className="relative w-full sm:w-55 h-full flex-shrink-0">
         <Image
-          src={project.splatterImage}
+          src={splatterImage}
           alt="Decorative splatter"
           fill
           className="object-cover"
@@ -74,17 +50,14 @@ function ProjectCardLeft({ project }) {
       {/* Card content */}
       <div className="p-6 flex flex-col justify-between">
         <div>
-          <h3 className="text-lg font-bold text-gray-900 mb-1">
-            {project.name}
+          <h3 className="text-lg font-bold text-gray-900 mb-5">
+            {title}
           </h3>
-          <p className="text-sm text-gray-600 mb-4">
-            {project.title}
-          </p>
           <p className="text-sm text-gray-700 leading-relaxed">
-            {project.text}
+            {description}
           </p>
         </div>
-        <a href="#projects/projectid" className="px-6 py-1 text-white mt-4 sm:mt-6 self-start bg-[#622676] font-semibold hover:bg-[#7F4592] transition  cursor-pointer">
+        <a href={`/projects/${slug}`} className="px-6 py-1 text-white mt-4 sm:mt-6 self-start bg-[#622676] font-semibold hover:bg-[#7F4592] transition  cursor-pointer">
           Read More
         </a>
       </div>
@@ -92,31 +65,28 @@ function ProjectCardLeft({ project }) {
   );
 }
 
-function ProjectCardRight({ project }) {
+function ProjectCardRight({ project, slug, splatterImage, title, description }) {
   return (
     <div className="bg-white overflow-hidden flex flex-col sm:flex-row hover:shadow-lg transition">
       {/* Card content */}
       <div className="p-6 flex flex-col justify-between">
         <div>
-          <h3 className="text-lg font-bold text-gray-900 mb-1">
-            {project.name}
+          <h3 className="text-lg font-bold text-gray-900 mb-5">
+            {title}
           </h3>
-          <p className="text-sm text-gray-600 mb-4">
-            {project.title}
-          </p>
           <p className="text-sm text-gray-700 leading-relaxed">
-            {project.text}
+            {description}
           </p>
         </div>
-        <button className="px-6 py-1 text-white mt-4 sm:mt-6 self-start bg-[#622676] font-semibold hover:bg-[#7F4592] transition  cursor-pointer">
+        <a href={`/projects/${slug}`} className="px-6 py-1 text-white mt-4 sm:mt-6 self-start bg-[#622676] font-semibold hover:bg-[#7F4592] transition  cursor-pointer">
           Read More
-        </button>
+        </a>
       </div>
 
       {/* Splatter Image */}
       <div className="relative w-full sm:w-55 h-full flex-shrink-0">
         <Image
-          src={project.splatterImage}
+          src={splatterImage}
           alt="Decorative splatter"
           fill
           className="object-cover"
@@ -125,4 +95,3 @@ function ProjectCardRight({ project }) {
     </div>
   );
 }
-
