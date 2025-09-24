@@ -1,4 +1,4 @@
-public Link from 'next/link';
+import Link from 'next/link';
 import Image from 'next/image';
 import arrow_icon from "public/images/resources/image/arrow_icon.png";
 import styles from "src/app/resources/styles/resourcesPage.module.css";
