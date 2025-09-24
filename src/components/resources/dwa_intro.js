@@ -1,4 +1,4 @@
-import styles from "/src/app/resources/styles/resourcesPage.module.css";
+import styles from "src/app/resources/styles/resourcesPage.module.css";
 
 export default function dwa_intro_component() {
 return (
