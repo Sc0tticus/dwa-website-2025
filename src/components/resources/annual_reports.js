@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from "/src/app/resources/styles/resourcesPage.module.css";
+import styles from "src/app/resources/styles/resourcesPage.module.css";
 
 export default function annual_reports_component() {
 return (
