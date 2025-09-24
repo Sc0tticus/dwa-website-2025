@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import close_icon from "/public/images/resources/image/close.png";
-import styles from "/src/app/resources/styles/resourcesPage.module.css";
+import close_icon from "public/images/resources/image/close.png";
+import styles from "src/app/resources/styles/resourcesPage.module.css";
 
 
 export default function popup_component() {
