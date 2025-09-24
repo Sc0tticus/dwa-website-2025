@@ -6,7 +6,7 @@ export default function HeroSection() {
       {/* Hero Image */}
       <div className="w-full h-[500px] relative">
         <Image
-          src="/images/projectspage/Projects-IMG1.png"
+          src="/images/projectspage/project-hero-img.png"
           alt="project-hero-img"
           fill
           className="object-cover object-center grayscale"
