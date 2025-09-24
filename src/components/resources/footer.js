@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import dwa_logo from "/public/images/resources/image/dwa_logo.jpg";
-import give.do_logo from "/public/images/resources/image/logo1.jpg";
-import guidestarindia_logo from "/public/images/resources/image/logo2.jpg";
-import benevity_logo from "/public/images/resources/image/logo3.jpg";
-import goodstack_logo from "/public/images/resources/image/logo4.jpg";
-import linkedin from "/public/images/resources/image/linkedin.jpg";
-import instagram from "/public/images/resources/image/instagram.jpg";
-import mail from "/public/images/resources/image/mail.jpg";
-import styles from "/src/app/resources/styles/resourcesPage.module.css";
+import dwa_logo from "public/images/resources/image/dwa_logo.jpg";
+import give.do_logo from "public/images/resources/image/logo1.jpg";
+import guidestarindia_logo from "public/images/resources/image/logo2.jpg";
+import benevity_logo from "public/images/resources/image/logo3.jpg";
+import goodstack_logo from "public/images/resources/image/logo4.jpg";
+import linkedin from "public/images/resources/image/linkedin.jpg";
+import instagram from "public/images/resources/image/instagram.jpg";
+import mail from "public/images/resources/image/mail.jpg";
+import styles from "src/app/resources/styles/resourcesPage.module.css";
 
 
 export default function footer_component() {
