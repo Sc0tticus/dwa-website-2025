@@ -1,4 +1,4 @@
-import header from 'header.js';
+import header from 'src/components/resources/header.js';
 import dwa_intro from 'dwa_intro.js';
 import featured_stories from 'featured_stories.js';
 import projects_gallery from 'projects_gallery.js';
