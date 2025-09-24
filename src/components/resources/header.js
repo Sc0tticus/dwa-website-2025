@@ -1,10 +1,10 @@
-import Link from 'next/link';
+public Link from 'next/link';
 import Image from 'next/image';
-import dwa_logo from "/public/images/resources/image/dwa_logo.jpg";
-import close_icon from "/public/images/resources/image/close.png";
-import menu_icon from "/public/images/resources/image/menu.png";
-import main_picture from "/public/images/resources/image/header_pic.jpg";
-import styles from "/src/app/resources/styles/resourcesPage.module.css";
+import dwa_logo from "public/images/resources/image/dwa_logo.jpg";
+import close_icon from "public/images/resources/image/close.png";
+import menu_icon from "public/images/resources/image/menu.png";
+import main_picture from "public/images/resources/image/header_pic.jpg";
+import styles from "src/app/resources/styles/resourcesPage.module.css";
 
 export default function section_header_component() {
 return (
