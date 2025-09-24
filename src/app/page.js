@@ -7,7 +7,7 @@ import BenevityBoardSection from "../components/home/BenevityBoardSection";
 import WhyTrustUs from "../components/home/WhyTrustUs";
 import TechPartners from "../components/home/TechPartners";
 import GetMoreInfo from "../components/home/GetMoreInfo";
-import Accreditations from "../components/home/Accreditations";
+import Accreditations from "../components/Accreditations";
 
 export default function Home() {
   return (

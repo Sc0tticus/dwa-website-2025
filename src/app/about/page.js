@@ -1,6 +1,6 @@
 import VisionMission from "../../components/about/VisionMission";
 import HeroSection from "../../components/about/HeroSection";
-import Accreditations from "../../components/home/Accreditations";
+import Accreditations from "../../components/Accreditations";
 import AboutAccreditations from "../../components/about/AboutAccreditations";
 import ImpactStats from "../../components/about/ImpactStats";
 import GetMoreInfo from "../../components/home/GetMoreInfo";
