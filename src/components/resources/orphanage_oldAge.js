@@ -1,10 +1,10 @@
-import Link from 'next/link';
+public Link from 'next/link';
 import Image from 'next/image';
-import pic1 from "/public/images/resources/image/pic1.jpg";
-import pic2 from "/public/images/resources/image/pic2.jpg";
-import pic3 from "/public/images/resources/image/pic3.jpg";
-import pic5 from "/public/images/resources/image/pic5.jpg";
-import styles from "/src/app/resources/styles/resourcesPage.module.css";
+import pic1 from "public/images/resources/image/pic1.jpg";
+import pic2 from "public/images/resources/image/pic2.jpg";
+import pic3 from "public/images/resources/image/pic3.jpg";
+import pic5 from "public/images/resources/image/pic5.jpg";
+import styles from "src/app/resources/styles/resourcesPage.module.css";
 
 export default function orphanage_oldAge_component() {
 return (
