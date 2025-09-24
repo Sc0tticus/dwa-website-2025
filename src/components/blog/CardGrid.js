@@ -1,12 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import blogPosts from "../../data/blogPosts";
 import { useState } from "react";
 
-// Load Inter font
-const inter = Inter({ subsets: ["latin"] });
 
 export default function CardGrid() {
   const [showAll, setShowAll] = useState(false);
@@ -14,7 +11,7 @@ export default function CardGrid() {
   const Card = ({ slug, image, title, description, date }) => (
     <a
       href={`/blog/${slug}`}
-      className={`flex flex-col md:flex-row bg-white shadow-md overflow-hidden w-full ${inter.className} hover:shadow-lg transition cursor-pointer`}
+      className={`flex flex-col md:flex-row bg-white shadow-md overflow-hidden w-full hover:shadow-lg transition cursor-pointer`}
     >
       {/* Left image */}
       <div className="relative md:w-1/2 h-48 md:h-auto">
@@ -44,7 +41,7 @@ export default function CardGrid() {
   return (
     <>
       {/* Card grid */}
-      <div className={`w-full px-8 lg:px-32 mt-10 ${inter.className}`}>
+      <div className={`w-full px-8 lg:px-32 mt-10`}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center">
           {cardsToShow.map((card, index) => (
             <Card key={index} {...card} />
