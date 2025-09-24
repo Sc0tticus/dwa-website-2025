@@ -1,7 +1,7 @@
-import Link from 'next/link';
+public Link from 'next/link';
 import Image from 'next/image';
-import pic4 from "/public/images/resources/image/pic4.jpg";
-import styles from "/src/app/resources/styles/resourcesPage.module.css";
+import pic4 from "public/images/resources/image/pic4.jpg";
+import styles from "src/app/resources/styles/resourcesPage.module.css";
 
 export default function featured_stories_component() {
 return (
