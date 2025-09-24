@@ -1,0 +1,558 @@
+body{
+    display:flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+p{
+    font-size: 20px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.5em 1em;
+    height: auto;
+}
+.close_dropdown_menu,
+.show_dropdown_menu{
+    display:none;
+}
+.logo{
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.logo img{
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    margin-right: 6px;
+}
+.logo span{   
+    font-weight: 700;
+}
+nav{
+    width: auto;
+    height: auto;
+    font-size: 12px;
+ }
+.nav_link,
+.nav_link_top{
+    color: #000000;
+    text-decoration: none;
+    padding: 4px 7px;
+    border-bottom: 1px solid black;
+    display: inline-block;
+    margin-left: 0.5em;
+} 
+.nav_link:hover, 
+.nav_link:active,
+.nav_link_top:hover, 
+.nav_link_top:active{
+    font-weight: 600;
+    color: #ff9df0;
+}
+a.button_link{
+    padding:10px 12px;
+    background-color: #ff9df0;
+    margin-left: 1em;
+    font-weight: 600;
+    border: 0; 
+}
+.main_picture{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.featured_stories, 
+.dwa_resources, 
+.projects_gallery, 
+.orphanage_old_age_home,
+.annual_reports,
+.get_more_info{
+    height: auto;
+    padding: 2em;
+    background-color: #ff8000;  
+    box-sizing:border-box;  
+}
+.featured_stories, 
+.orphanage_old_age_home,
+.get_more_info{
+    background-color: #ffffff;
+}
+.projects_gallery{
+    background-color: #ffd446;
+}
+.featured_stories_gallery, 
+.img_gallery{
+    display: flex;
+    width: 100%;
+    height:auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+.card{
+    width:30%;
+    height:150px;
+    border-radius:10px;
+    box-shadow: 1px 1px 8px 1.5px #a3a3c2;
+}
+.picture_holder{
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    float: left;    
+}
+.stories{
+    height: 100%;
+    padding: 0 10px 5px 6px;
+    width: 50%;
+    float: right;
+    overflow-y:auto;    
+    box-sizing: border-box;
+    background-color:#f0f0f5; 
+    border-bottom-right-radius:10px;
+    border-top-right-radius:10px;   
+}
+.stories p{
+    font-size:13px;
+}
+.picture_holder img{
+    height: 100%;   
+    max-width:100%;
+    border-bottom-left-radius:10px;
+    border-top-left-radius:10px;
+}
+
+.img_gallery img{
+    max-width:24%;
+    max-height:125px;
+}
+.img_gallery h4{
+    width: 100%;
+    text-align: left;
+}
+.annual_reports{
+    background-color:#f0f0f5;
+    margin-top:0;
+}
+.annual_reports a{
+    padding: 8px 45px;
+    background-color:#7f4592;
+    color:#ffffff;
+    font-size:16px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 1.5em;
+}
+a.annual_reports_last_link{
+        margin-right:0;
+    }
+.get_more_info_array, 
+form{
+    display:flex;
+    flex-direction:row;    
+}
+.get_more_info_array p{
+    width: 32%;
+}
+form{
+    padding-left: 1em;
+    width: 62%;
+    justify-content:space-around;
+}
+input{
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: 0.5em;
+    margin-bottom: 0.7em;
+}
+.arrow_icon{
+    display: block;
+    margin-top: 1em;
+    padding-left:0.3em;
+}
+button{
+    border: 0;
+    color: #ffffff;
+    font-weight: 700;
+}
+form button{    
+    width: 100%;
+    display: block;
+    margin-top: 1.5em;    
+    background-color: #004265;
+    padding: 14px 0;
+}
+.donate_now{
+    background-color: #ff9df0;
+    height: auto;    
+}
+.donate_now span{
+    font-size:20px; 
+    float: right; 
+    padding-top: 0.7em;      
+}
+.donate_now button{
+    padding: 0.7em 2.2em;   
+    font-size:20px;
+    background-color: #7f4592;
+    float: right;
+    display: inline-block;
+    margin: 0 2.8em 0 2em;
+}
+footer, 
+.footer_inner_div,
+.policies{
+    height: auto;
+    box-sizing:border-box;
+    display: flex;
+    flex-direction:row;      
+}
+.footer_outer_div{
+    display: flex;
+    flex-direction:column;  
+    align-content:space-between;
+    background-color: #004265;
+    width:70%;
+    padding-left:2em;
+    font-weight: bold; 
+    color:#ffffff;
+}
+.footer_inner_div{
+    justify-content:space-around;
+}
+.address, 
+.accreditation{
+    width:45%;   
+} 
+.address p,
+.policies a,
+.policies span{
+    font-size:9px;
+    color:#ffffff;
+}
+.accreditation h3{
+    text-align: left;
+    font-size:11px;
+}
+.policies, 
+.social_media{
+   width:100%;   
+}
+.policies{
+   padding:1em;  
+   justify-content:space-between;
+}
+.accreditation img{
+    height: 32px;
+    width: auto;
+    display:inline-block;
+    margin:auto;
+}
+.dwa{
+    display:flex;
+    flex-direction: column;
+    height:auto;
+    width:30%;    
+    background-color: #3ebff9;
+    align-items:center;
+    justify-content: center;
+    font-weight:bold;
+}
+.dwa img{
+    height:85px;
+    width:85px;
+}
+.large_screen{
+   color:#004265;
+}
+.mobile{
+  display:none;
+}
+.social_media img{
+   height: 38px;
+   width: 38px;
+   display:inline-block;
+   margin-left:6px;
+}
+/* Popup page settings */
+.popup_page{
+    position:absolute;
+    top:25%;
+    left:19%;
+    z-index:6;
+    width:62%;
+    height:auto;
+    border:1px solid black;    
+}
+form.popup{
+    display: flex;
+    flex-direction: column;
+}
+button.popup{
+    margin-bottom: 1em;
+}
+.close_popup{
+    float: right;
+    background-color:#004265;
+    padding: 4px;
+    display:inline-block;    
+}
+p.popup{
+    font-size: 17px;
+}
+
+
+/* Mobile responsive settings for popup page */
+@media screen and (max-width:800px){
+      .popup_page {
+        width:70%;
+        left:15%;    
+    }
+      .get_more_info{
+        padding: 0.7em;
+    }
+     .get_more_info_array{
+        flex-direction: column;
+    }
+    .get_more_info_array p{
+    width: 100%;
+    }
+    form{
+        width:100%;
+        padding: 0;
+        display: flex;
+        flex-direction:column;
+    }
+}
+
+@media screen and (max-width:400px){
+    .popup_page {
+        width:92%;
+        left:4%;
+    }
+}
+
+/* RESOURCES PAGE */
+/* Mobile responsive settings for header component */
+@media screen and (max-width:800px){
+    /* hide nav bar unless menu is clicked */
+    nav{
+    height: 1px;
+    width: 1px;
+    visibility: hidden;
+    }
+    nav:target{
+    visibility: visible;
+    display: block;
+    width: 77%;
+    height: auto;
+    position:fixed;
+    top: 0;
+    right: 0;
+    z-index: 6;
+    padding:1em 0;   
+    border-left: 1px solid #004265;
+    border-bottom: 1px solid #004265;
+    background-color:#ffffff;
+    border-bottom-left-radius: 13px;
+    }
+    .nav_link,
+    .nav_link_top{
+        display: block;
+        padding:1em;
+        width: 100%;            
+    }
+     .nav_link_top{
+         margin-top: 3em;
+     }
+    .show_dropdown_menu{
+        display:inline-block;
+        padding: 4px;   
+        height: 40px;     
+    }
+    .show_dropdown_menu:active, 
+    .show_dropdown_menu:hover{
+        border:1px solid #004265;
+    }
+     .close_dropdown_menu{
+         display:block;
+         float: left;
+         padding: 4px;
+         background-color:#004265;
+         margin-left: 1em;                
+     }
+     a.button_link{
+         display: block;
+         text-align: center;
+         margin: 2em auto;
+         width: 60%;
+         padding: 1em;
+     }
+}
+
+
+/* Mobile responsive settings for body components */
+@media screen and (max-width:800px){
+    h2, h4{
+    text-align: center;
+    }
+    .featured_stories, 
+    .dwa_resources, 
+    .projects_gallery, 
+    .orphanage_old_age_home,
+    .annual_reports,
+    .get_more_info{
+    padding: 1em;
+    }
+    .featured_stories_gallery, 
+    .img_gallery{
+    flex-direction: column;   
+    flex-wrap: nowrap;    
+    }
+    .card{
+    width:100%;
+    height:auto;  
+    margin-top:1em; 
+    display: flex;
+    flex-direction: column;     
+    }
+    .picture_holder{
+    max-height:auto;
+    width: 100%;
+    display: block;
+    float: none;   
+    border-bottom-left-radius:10px; 
+    }
+    .stories{
+    max-height:150px;
+    padding: 6px;
+    width: 100%;
+    float: none;
+    overflow-y:auto;    
+    box-sizing: border-box;
+    background-color:#f0f0f5; 
+    border-radius: 0;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;   
+    }
+    .picture_holder img{
+    display: block;
+    max-height:auto;   
+    width:100%;
+    border-bottom-left-radius:0;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    }
+    .img_gallery img{
+    max-width:100%;
+    max-height:auto;
+    display: block;
+    margin-bottom: 2em;
+    }
+    .img_gallery h4{
+    width: 100%;
+    text-align: center;
+    }
+    .annual_reports a{
+    text-align:center;
+    padding: 0.7em 0;
+    max-width: 70%;
+    display: block;
+    margin: 1.5em auto;
+    }
+    a.annual_reports_last_link{
+        margin-right:auto;
+    }   
+    .dwa{
+    width:90%;        
+    }
+    .dwa img{
+    display: block;
+    margin: auto;
+}
+    .mobile{
+       display: inline;
+       color:#004265;
+    }
+    .large_screen{
+        display:none;
+    }   
+      form{
+    padding: 0;
+    width: 100%;
+    justify-content:space-around;
+    }
+    input{
+        width: 90%;
+        margin: auto;
+        padding: 1em 0.5em;
+    }
+    form button{
+        max-width: 80%;
+        margin:2em auto auto auto;
+        padding: 0.8em 0;
+    }
+    .donate_now span{
+    display: block;
+    text-align: center; 
+    width: 100%;
+    } 
+    .donate_now button{
+    float: none;
+    display: block;
+    margin: auto;
+    margin-top: 1em;  
+    padding: 0.6em 1em;
+    }
+    
+}
+
+
+/* Mobile responsive settings for footer components */
+@media screen and (max-width:800px){
+     footer{
+         max-width:100%;
+     }
+    footer, 
+    .footer_inner_div{
+    flex-direction:column;    
+    box-sizing:border-box;  
+    }
+    .footer_outer_div{
+    width:100%;   
+    padding:1em 0 0.5em 0;
+    margin:0;
+    }
+    .address,
+    .accreditation,
+    .social_media{   
+    display: block;
+    width:70%;
+    margin-left: 1em;
+    }
+    .accreditation h3{
+    text-align:left;    
+    }
+    .policies, 
+    {
+    padding:0 0.7em;   
+    }
+   .dwa{
+    width:100%;    
+    }
+    .social_media img{
+    margin:auto;
+    }    
+}
