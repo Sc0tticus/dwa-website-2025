@@ -3,7 +3,7 @@ import blogPosts from "../../../data/blogPosts";
 import PostHeader from "../../../components/blog/PostHeader";
 import PostImage from "../../../components/blog/PostImage";
 import PostContent from "../../../components/blog/PostContent";
-import Accreditations from "../../../components/Accreditations";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +15,6 @@ export default function BlogPost({ params }) {
       <PostHeader title={post.title} date={post.date} />
       <PostImage src={post.image} alt={post.title} />
       <PostContent content={post.content} />
-      <Accreditations /> 
     </div>
   );
 }
