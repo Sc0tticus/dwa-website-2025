@@ -1,4 +1,4 @@
-import VisionMission from "../../components/about/VisionMission";
+import DualContentBlock from "../../components/DualContentBlock";
 import HeroSection from "../../components/HeroSection";
 import AboutAccreditations from "../../components/about/AboutAccreditations";
 import ImpactStats from "../../components/about/ImpactStats";
@@ -31,7 +31,7 @@ export default function AboutPage() {
               ],
             }}
           />
-          <VisionMission />
+          <DualContentBlock />
           <AboutAccreditations />
           <ImpactStats
             numbersBg="bg-[#FFD446]"

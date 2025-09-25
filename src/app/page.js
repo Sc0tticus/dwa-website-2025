@@ -1,5 +1,5 @@
 import HeroSection from "../components/HeroSection";
-import GoalsObjectives from "../components/home/GoalsObjectives";
+import DualContentBlock from "../components/DualContentBlock";
 import ProgramsGrid from "../components/home/ProgramsGrid";
 import ImpactStats from "../components/ImpactStats";
 import FeaturedProjects from "../components/home/FeaturedProjects";
@@ -41,7 +41,68 @@ export default function Home() {
                 ],
               }}
       />
-      <GoalsObjectives />
+      <DualContentBlock
+            left={{
+              title: "Goals",
+              titleColor: "#FFFFFF",
+              bgColor: "#004265",
+              type: "list",
+              content: [
+                [
+                  { text: "End poverty & discrimination 🚫", weight:"normal", color: "#FFFFFF" },
+                ],
+                [
+                  { text: "Equal learning for every child 👧👦", weight:"normal", color: "#FFFFFF" },
+                ],
+                [
+                  { text: "Economic independence for families 💰", weight:"normal", color: "#FFFFFF" },
+                ],
+                [
+                  { text: "Strong, healthy communities 🌱", weight:"normal", color: "#FFFFFF" },
+                ],
+                [
+                  { text: "Self-reliant rural villages 🌾", weight:"normal", color: "#FFFFFF" },
+                ],
+                [
+                  { text: "Inclusive growth & participation 🌍", weight:"normal", color: "#FFFFFF" },
+                ],
+                [
+                  { text: "Respect and empowerment for Dalits 🌟", weight:"normal", color: "#FFFFFF" },
+                ],
+                
+              ],
+            }}
+
+            right={{
+              title: "Objectives",
+              titleColor: "#000000",
+              bgColor: "#9FDFFC",
+              type: "list",
+              content: [
+                [
+                  { text: "Promote equality & justice ⚖️", weight:"normal", color: "#000000" },
+                ],
+                [
+                  { text: "Quality education for children 📚", weight:"normal", color: "#000000" },
+                ],
+                [
+                  { text: "Women’s empowerment & livelihoods 👩‍👩‍👧", weight:"normal", color: "#000000" },
+                ],
+                [
+                  { text: "Better health & nutrition 🏥", weight:"normal", color: "#000000" },
+                ],
+                [
+                  { text: "Sustainable livelihoods & skills 🛠️", weight:"normal", color: "#000000" },
+                ],
+                [
+                  { text: "Community leadership 🤝", weight:"normal", color: "#000000" },
+                ],
+                [
+                  { text: "Rights & dignity advocacy ✊", weight:"normal", color: "#000000" },
+                ],
+              ],
+            }}
+        />
       <ProgramsGrid />
       <ImpactStats />
       <FeaturedProjects />
