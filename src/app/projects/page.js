@@ -1,25 +1,76 @@
+import { title } from "process";
+import DualContentBlock from "../../components/DualContentBlock";
+
 export default function ProjectsPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8">Projects</h1>
-        <div className="bg-white rounded-lg shadow-lg p-8">
-          <p className="text-lg text-gray-600 mb-4">
-            This page is ready for implementation based on the Figma designs.
-          </p>
-          <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
-            <div className="flex">
-              <div className="ml-3">
-                <p className="text-sm text-blue-700">
-                  <strong>For Developer:</strong> Implement the Projects page design from Figma here.
-                  This page appears to have project cards, maps, and detailed project information.
-                  Reference the existing components in /src/components/ and follow the established patterns.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+   <main>
+     <DualContentBlock
+                left={{
+                  title: "Dairy Project – Govindapalle",
+                  titleColor: "#FFFFFF",
+                  titleSize: "text-3xl",
+                  bgColor: "#622676",
+                  type: "list",
+                  content: [
+                    [
+                      { text: "Location", weight:"bold", color: "#FFFFFF" },
+                      { text: ": Govindapalle Village", weight:"normal", color: "#FFFFFF" },
+                    ],
+                    [
+                      { text: "Beneficiaries", weight:"bold", color: "#FFFFFF" },
+                      { text: ": 40 women", weight:"normal", color: "#FFFFFF" },
+                    ],
+                    [
+                      { text: "Budget", weight:"bold", color: "#FFFFFF" },
+                      { text: ": ₹20 lakhs", weight:"normal", color: "#FFFFFF" },
+                    ],
+                    [
+                      { text: "Duration", weight:"bold", color: "#FFFFFF" },
+                      { text: ": 12 months", weight:"normal", color: "#FFFFFF" },
+                    ],
+                    [
+                      { text: "Results", weight:"bold", color: "#FFFFFF" },
+                      { text: `: Women gained steady income, improved nutrition for families, 
+                        and collective savings groups strengthened financial 
+                        independence.`, weight:"normal", color: "#FFFFFF" },
+                    ],
+                    
+                  ],
+                }}
+    
+                right={{
+                  title: "Finance Awareness – Sirivella",
+                  titleColor: "#000000",
+                  titleSize: "text-3xl",
+                  bgColor: "#FFCEF8",
+                  type: "list",
+                  content: [
+                    [
+                      { text: "Location", weight:"bold", color: "#000000" },
+                      { text: ": 8 villages, Sirivella Mandal", weight:"normal", color: "#000000" },
+                    ],
+                    [
+                      { text: "Beneficiaries", weight:"bold", color: "#000000" },
+                      { text: ": 700–800 women", weight:"normal", color: "#000000" },
+                    ],
+                    [
+                      { text: "Budget", weight:"bold", color: "#000000" },
+                      { text: ": ₹12 lakhs", weight:"normal", color: "#000000" },
+                    ],
+                    [
+                      { text: "Duration", weight:"bold", color: "#000000" },
+                      { text: ": 12 months", weight:"normal", color: "#000000" },
+                    ],
+                    [
+                      { text: "Results", weight:"bold", color: "#000000" },
+                      { text: `: Women developed financial literacy, reduced debt reliance, 
+                        adopted savings habits, and started small investments for 
+                        household security.`, weight:"normal", color: "#000000" },
+                    ],
+                    
+                  ],
+                }}
+            />
+    </main>
   );
 }

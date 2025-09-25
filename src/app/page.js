@@ -1,6 +1,7 @@
 import HeroSection from "../components/HeroSection";
 import DualContentBlock from "../components/DualContentBlock";
 import ProgramsGrid from "../components/home/ProgramsGrid";
+import Testimonials from "../components/home/Testimonials";
 import ImpactStats from "../components/ImpactStats";
 import FeaturedProjects from "../components/home/FeaturedProjects";
 import BenevityBoardSection from "../components/home/BenevityBoardSection";
@@ -104,7 +105,11 @@ export default function Home() {
             }}
         />
       <ProgramsGrid />
-      <ImpactStats />
+      <ImpactStats
+        bgColor="#9FDFFC"
+        textColor="#004265"
+      />
+      <Testimonials />
       <FeaturedProjects />
       <BenevityBoardSection />
       <WhyTrustUs />

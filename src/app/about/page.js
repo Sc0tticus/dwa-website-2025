@@ -1,7 +1,7 @@
 import DualContentBlock from "../../components/DualContentBlock";
 import HeroSection from "../../components/HeroSection";
 import AboutAccreditations from "../../components/about/AboutAccreditations";
-import ImpactStats from "../../components/about/ImpactStats";
+import ImpactStats from "../../components/ImpactStats";
 import GetMoreInfo from "../../components/home/GetMoreInfo";
 import AboutTeam from "../../components/about/AboutTeam"; 
 import Volunteers from "../../components/about/Volunteers";
@@ -33,9 +33,7 @@ export default function AboutPage() {
           />
           <DualContentBlock />
           <AboutAccreditations />
-          <ImpactStats
-            numbersBg="bg-[#FFD446]"
-          />
+          <ImpactStats/>
           <AboutTeam />
           <Volunteers />
           <WorkAreas />
