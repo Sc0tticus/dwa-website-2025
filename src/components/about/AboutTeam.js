@@ -2,12 +2,12 @@
 import Image from "next/image";
 
 const teamMembers = [
-  { name: "S. Moses", role: "Program Manager", src: "/images/homepage/SplatterImages/green splatter.png" },
-  { name: "K. Saroja", role: "Field Work", src: "/images/homepage/SplatterImages/green splatter.png" },
-  { name: "G. Bhaskar", role: "Office Staff", src: "/images/homepage/SplatterImages/green splatter.png" },
-  { name: "P. Danielu", role: "Field Work", src: "/images/homepage/SplatterImages/green splatter.png" },
-  { name: "N. Sudha Rani", role: "Field Work", src: "/images/homepage/SplatterImages/green splatter.png" },
-  { name: "K. Bujji", role: "Office Work", src: "/images/homepage/SplatterImages/green splatter.png" },
+  { name: "S. Moses", role: "Program Manager", src: "/images/SplatterImages/green splatter.png" },
+  { name: "K. Saroja", role: "Field Work", src: "/images/SplatterImages/green splatter.png" },
+  { name: "G. Bhaskar", role: "Office Staff", src: "/images/SplatterImages/green splatter.png" },
+  { name: "P. Danielu", role: "Field Work", src: "/images/SplatterImages/green splatter.png" },
+  { name: "N. Sudha Rani", role: "Field Work", src: "/images/SplatterImages/green splatter.png" },
+  { name: "K. Bujji", role: "Office Work", src: "/images/SplatterImages/green splatter.png" },
 ];
 
 const AboutTeam = () => {

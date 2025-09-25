@@ -1,73 +1,77 @@
-import React from 'react'
+import React from "react";
 
-const FeaturedProjects = () => {
+export default function FeaturedProjects() {
+  const leftProjects = [
+    {
+      title: "Digital Education Project",
+      content: [
+        { text: "Bridging the digital divide for rural Dalit children by providing access to technology, e-learning resources, and training, ensuring equal education opportunities and ", weight: "normal" },
+        { text: "brighter futures", weight: "bold" },
+        { text: ".", weight: "normal" },
+      ],
+    },
+    {
+      title: "Women Entrepreneurship Project",
+      content: [
+        { text: "Empowering rural women through micro-credit, skill-building, and enterprise support in sheep rearing and small businesses, fostering financial independence and ", weight: "normal" },
+        { text: "community leadership", weight: "bold" },
+        { text: ".", weight: "normal" },
+      ],
+    },
+  ];
+
+  const rightNumbers = [
+    { label: "1. Registration Number:", value: "384/1993" },
+    { label: "2. FCRA Number:", value: "010270166" },
+    { label: "3. Guide Star:", value: "9683" },
+    { label: "4. NGO Darpan:", value: "AP/2021/0276162" },
+    { label: "5. TAX Exemption: ", value: "AAKFD2353BE20214" },
+  ];
+
+  const weightMap = {
+    medium: "500",
+    bold: "700",
+  };
+
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-lg overflow-hidden shadow-lg">
-          {/* Left side - Featured Projects */}
-          <div className="bg-slate-800 text-white p-8">
-            <div className="mb-8">
-              <h3 className="text-xl font-bold mb-4">Digital Education Project</h3>
-              <p className="text-sm leading-relaxed">
-                Bridging the digital divide for rural Dalit children by providing access to technology, e-learning resources, and training, ensuring equal education opportunities and <span className="font-semibold">brighter futures</span>.
+    <section className="grid grid-cols-1 md:grid-cols-2">
+      {/* Left Column */}
+      <div className="flex p-12" style={{ backgroundColor: "#004265", color: "#FFFFFF" }}>
+        <div className="max-w-md mx-auto flex flex-col justify-start space-y-8">
+          {leftProjects.map((project, idx) => (
+            <div key={idx}>
+              <h3 className="text-3xl font-bold mb-4">{project.title}</h3>
+              <p className="text-lg leading-relaxed">
+                {project.content.map((seg, sidx) => (
+                  <span key={sidx} style={{ fontWeight: weightMap[seg.weight] }}>
+                    {seg.text}
+                  </span>
+                ))}
               </p>
             </div>
-            
-            <div>
-              <h3 className="text-xl font-bold mb-4">Women Entrepreneurship Project</h3>
-              <p className="text-sm leading-relaxed">
-                Empowering rural women through micro-credit, skill-building, and enterprise support in sheep rearing and small businesses, fostering financial independence and community leadership.
-              </p>
-            </div>
-          </div>
+          ))}
+        </div>
+      </div>
 
-          {/* Right side - Verification Numbers */}
-          <div className="bg-blue-100 p-8">
-            <div className="flex items-center mb-6">
-              <div className="mr-3">
-                <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                </svg>
-              </div>
-              <h2 className="text-2xl font-bold text-gray-900">Featured Projects</h2>
-            </div>
+      {/* Right Column */}
+      <div className="flex p-12" style={{ backgroundColor: "#9FDFFC", color: "#000000" }}>
+        <div className="max-w-md mx-auto flex flex-col justify-start space-y-6">
+          <h2 className="text-5xl font-bold flex items-center mb-16">
+        <img src="/icons/homepage/arrow-left.svg" alt="Arrow Left" className="h-8 w-8 mr-4" />
+        Featured Projects
+      </h2>
 
-            <div className="mb-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">Verification Numbers</h3>
-              
-              <div className="space-y-3">
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-700">1. Registration Number</span>
-                  <span className="text-sm font-medium text-gray-900">: 384/1993</span>
-                </div>
-                
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-700">2. FCRA Number</span>
-                  <span className="text-sm font-medium text-gray-900">: 010270166</span>
-                </div>
-                
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-700">3. Guide Star</span>
-                  <span className="text-sm font-medium text-gray-900">: 9683</span>
-                </div>
-                
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-700">4. NGO Darpan</span>
-                  <span className="text-sm font-medium text-gray-900">: AP/2021/0276162</span>
-                </div>
-                
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-700">5. TAX Exemption</span>
-                  <span className="text-sm font-medium text-gray-900">: AAKFD2353BF20214</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h3 className="text-3xl font-bold mb-4">Verification Numbers</h3>
+          <ol className="list-decimal list-inside text-lg space-y-2">
+            {rightNumbers.map((item, idx) => (
+              <li key={idx} className="flex justify-between">
+                <span>{item.label}</span>
+                <span className="font-medium"> {item.value}</span>
+              </li>
+            ))}
+          </ol>
         </div>
       </div>
     </section>
-  )
+  );
 }
-
-export default FeaturedProjects

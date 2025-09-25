@@ -4,6 +4,7 @@ import PostHeader from "../../../components/blog/PostHeader";
 import PostImage from "../../../components/blog/PostImage";
 import PostContent from "../../../components/blog/PostContent";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function BlogPost({ params }) {
