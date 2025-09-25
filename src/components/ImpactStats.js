@@ -7,19 +7,19 @@ const testimonials = [
     name: "John Romnes",
     title: "CEO – Minnesota Elevators Inc., USA",
     text: "Supporting the sheep rearing project with Dalit Welfare Association has been truly rewarding. The impact on rural families is visible, and I'm very happy with the results achieved.",
-    splatterImage: "/images/homepage/SplatterImages/orange splatter.png"
+    splatterImage: "/images/SplatterImages/orange splatter.png"
   },
   {
     name: "Gerardo Betancourt",
     title: "Executive Team uch-arqsj., USA",
     text: "I deeply appreciate the transparency and timely reports provided. Their professionalism and commitment gave us confidence that our support is making a real difference on the ground.",
-    splatterImage: "/images/homepage/SplatterImages/purple splatter.png"
+    splatterImage: "/images/SplatterImages/purple splatter.png"
   },
   {
     name: "Indira Oskvarek",
     title: "Secretary - Global Compassion INC., USA",
     text: "The dairy project we supported delivered outstanding results. We were so impressed with their project management that we are now considering funding the second phase as well.",
-    splatterImage: "/images/homepage/SplatterImages/red splatter.png"
+    splatterImage: "/images/SplatterImages/red splatter.png"
   }
 ];
 
