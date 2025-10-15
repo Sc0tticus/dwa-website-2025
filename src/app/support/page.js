@@ -1,4 +1,4 @@
-import Accreditations from "../../components/home/Accreditations";
+
 import Causes from "../../components/support/causes";
 import EntireWorld from "../../components/support/entireWorld";
 import GetInvolved from "../../components/support/getInvolved";
@@ -15,9 +15,7 @@ export default function SupportPage() {
       <Causes/>
       <EntireWorld/>
       <InfoForm/>
-      <GetInvolved/>
-      <Accreditations />
-     
+      <GetInvolved/>  
     </main>
   );
 }

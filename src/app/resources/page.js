@@ -6,7 +6,7 @@ import OrphanageOldageHome from "../../components/resources/OrphanageOldageHome"
 import AnnualReports from "../../components/resources/AnnualReports"
 import GetMoreInfo from "../../components/home/GetMoreInfo"
 import GetInvolved from "../../components/support/getInvolved"
-import Accreditations from "../../components/home/Accreditations"
+
 
 export default function ResourcesPage() {
   return (
@@ -19,7 +19,6 @@ export default function ResourcesPage() {
       <AnnualReports />
       <GetMoreInfo />
       <GetInvolved />
-      <Accreditations />
     </main>
   )
 }
