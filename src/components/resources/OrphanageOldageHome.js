@@ -22,7 +22,7 @@ export default function OrphanageOldageHome() {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {galleryImages.map((image, index) => (
-              <div key={`orphanage-${index}`} className="relative aspect-[4/3] overflow-hidden rounded-lg">
+              <div key={`orphanage-${index}`} className="relative aspect-[4/3] overflow-hidden">
                 <Image
                   src={image}
                   alt={`Orphanage image ${index + 1}`}
@@ -41,7 +41,7 @@ export default function OrphanageOldageHome() {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {galleryImages.map((image, index) => (
-              <div key={`oldage-${index}`} className="relative aspect-[4/3] overflow-hidden rounded-lg">
+              <div key={`oldage-${index}`} className="relative aspect-[4/3] overflow-hidden">
                 <Image
                   src={image}
                   alt={`Old age home image ${index + 1}`}

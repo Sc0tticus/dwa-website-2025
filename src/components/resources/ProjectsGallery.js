@@ -22,7 +22,7 @@ export default function ProjectsGallery() {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {galleryImages.map((image, index) => (
-              <div key={`title1-${index}`} className="relative aspect-[4/3] overflow-hidden rounded-lg">
+              <div key={`title1-${index}`} className="relative aspect-[4/3] overflow-hidden">
                 <Image
                   src={image}
                   alt={`Gallery image ${index + 1}`}
@@ -41,7 +41,7 @@ export default function ProjectsGallery() {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {galleryImages.map((image, index) => (
-              <div key={`title2-${index}`} className="relative aspect-[4/3] overflow-hidden rounded-lg">
+              <div key={`title2-${index}`} className="relative aspect-[4/3] overflow-hidden">
                 <Image
                   src={image}
                   alt={`Gallery image ${index + 1}`}
