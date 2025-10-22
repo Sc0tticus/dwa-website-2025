@@ -1,7 +1,7 @@
 const projectPosts = [
   {
     slug: "Digital-Literacy",
-    splatterImage: "/images/homepage/SplatterImages/green splatter.png",
+    splatterImage: "/images/SplatterImages/green splatter.png",
     title: "Digital Literacy",
     description:
       "Equipping rural Dalit children and youth with digital skills, e-learning tools, and computer training to bridge the digital divide, improve academic performance, and open new employment opportunities in the modern world.",
@@ -55,7 +55,7 @@ const projectPosts = [
   },
   {
     slug: "Skill-Development",
-    splatterImage: "/images/homepage/SplatterImages/green splatter.png",
+    splatterImage: "/images/SplatterImages/green splatter.png",
     title: "Skill Development",
     description:
       "Enhancing employability of college students through training in technical and digital skills, career counseling, and workshops, preparing them for competitive job markets and future entrepreneurship opportunities.",
@@ -108,7 +108,7 @@ const projectPosts = [
   },
   {
     slug: "Women-Empowerment",
-    splatterImage: "/images/homepage/SplatterImages/green splatter.png",
+    splatterImage: "/images/SplatterImages/green splatter.png",
     title: "Women Empowerment",
     description:
       "Supporting women with micro-credit, training, and financial resources to start small enterprises, generate income, and strengthen household security, while promoting gender equality and leadership in their communities.",
@@ -161,7 +161,7 @@ const projectPosts = [
   },
   {
     slug: "Health-Awareness",
-    splatterImage: "/images/homepage/SplatterImages/green splatter.png",
+    splatterImage: "/images/SplatterImages/green splatter.png",
     title: "Health Awareness",
     description:
       "Promoting menstrual hygiene education and access to safe products among adolescent girls and women, breaking taboos, and improving health, dignity, and school attendance across rural villages in Nandyal and Kurnool districts.",

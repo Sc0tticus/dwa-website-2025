@@ -12,7 +12,7 @@ export default function AnnualReports() {
           {years.map((year) => (
             <button
               key={year}
-              className="bg-[#622676] hover:bg-[#7a3091] text-white font-bold text-2xl px-12 py-4 rounded transition-colors duration-200"
+              className="bg-[#622676] hover:bg-[#7a3091] text-white font-bold text-2xl px-12 py-4 transition-colors duration-200"
             >
               {year}
             </button>

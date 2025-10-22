@@ -5,19 +5,19 @@ const testimonials = [
     name: "Y. Saramma",
     title: "Govindapalle",
     text: "With the support of Dalit Welfare Association, I started an income-generating activity that helps feed my family. This opportunity has given me confidence, stability, and hope for a better future.",
-    splatterImage: "/images/homepage/SplatterImages/green splatter.png"
+    splatterImage: "/images/SplatterImages/green splatter.png"
   },
   {
     name: "Y. Saramma",
     title: "Govindapalle",
     text: "With the support of Dalit Welfare Association, I started an income-generating activity that helps feed my family. This opportunity has given me confidence, stability, and hope for a better future.",
-    splatterImage: "/images/homepage/SplatterImages/red splatter.png"
+    splatterImage: "/images/SplatterImages/red splatter.png"
   },
   {
     name: "Y. Saramma",
     title: "Govindapalle",
     text: "With the support of Dalit Welfare Association, I started an income-generating activity that helps feed my family. This opportunity has given me confidence, stability, and hope for a better future.",
-    splatterImage: "/images/homepage/SplatterImages/purple splatter.png"
+    splatterImage: "/images/SplatterImages/purple splatter.png"
   }
 ];
 

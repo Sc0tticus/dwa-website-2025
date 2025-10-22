@@ -3,32 +3,32 @@ import Image from 'next/image'
 
 const BenevityBoardSection = () => {
   const splatterImages = [
-    "/images/homepage/SplatterImages/red splatter.png",
-    "/images/homepage/SplatterImages/purple splatter.png", 
-    "/images/homepage/SplatterImages/orange splatter.png",
-    "/images/homepage/SplatterImages/green splatter.png"
+    "/images/SplatterImages/red splatter.png",
+    "/images/SplatterImages/purple splatter.png", 
+    "/images/SplatterImages/orange splatter.png",
+    "/images/SplatterImages/green splatter.png"
   ]
 
   const boardMembers = [
     {
       name: "S. Samuel",
       role: "President",
-      image: "/images/homepage/SplatterImages/red splatter.png"
+      image: "/images/SplatterImages/red splatter.png"
     },
     {
       name: "J. Nirmala",
       role: "V.President",
-      image: "/images/homepage/SplatterImages/purple splatter.png"
+      image: "/images/SplatterImages/purple splatter.png"
     },
     {
       name: "B. Lakshmi",
       role: "Secretary",
-      image: "/images/homepage/SplatterImages/orange splatter.png"
+      image: "/images/SplatterImages/orange splatter.png"
     },
     {
       name: "S. Sarojamma",
       role: "Treasurer",
-      image: "/images/homepage/SplatterImages/green splatter.png"
+      image: "/images/SplatterImages/green splatter.png"
     }
   ]
 

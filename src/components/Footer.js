@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const Accreditations = () => {
+const Footer = () => {
   return (
     <section className="bg-teal-800 py-8">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -98,4 +98,4 @@ const Accreditations = () => {
   )
 }
 
-export default Accreditations
+export default Footer

@@ -15,7 +15,7 @@ const PresidentMessage = () => {
           {/* Left Image */}
           <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-6 w-full md:w-1/3 max-w-xs h-64 md:h-auto flex justify-center items-center">
             <Image
-              src="/images/homepage/SplatterImages/purple splatter.png"
+              src="/images/SplatterImages/purple splatter.png"
               alt="President message"
               width={400}
               height={300}

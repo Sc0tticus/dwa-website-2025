@@ -3,7 +3,7 @@ import PostHeader from "../../../components/projects/PostHeader";
 import PostImage from "../../../components/projects/PostImage";
 import PostContent from "../../../components/projects/PostContent";
 import GetMoreInfo from "../../../components/home/GetMoreInfo";
-import Accreditations from "../../../components/home/Accreditations";
+
 
 export default function ProjectsPost({ params }) {
   const ongoingProjectPosts = projectPosts.find((p) => p.slug === params.slug);
@@ -15,7 +15,6 @@ export default function ProjectsPost({ params }) {
         <PostContent content={ongoingProjectPosts.content} />
       </div>
       <GetMoreInfo />
-      <Accreditations />
     </>
   );
 }

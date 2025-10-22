@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "../components/Navigation";
 import { ThemeProvider } from "../contexts/ThemeContext";
+import Footer from "../components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,8 +31,8 @@ export default function RootLayout({ children }) {
       >
         <ThemeProvider>
           <Navigation />
-
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
